@@ -9,16 +9,26 @@
 <body>
 
     <div class="question">
-        <input type="text">
-        <button id="btn" type="submit">Ask a question</button>
+        <input id="input" type="text" placeholder="Ask your question">
+    </div>
+
+    <div class="button">
+        <button id="btn" type="submit">Ask in the ball</button>
+        <button id="reset">Reset</button>
     </div>
 
     <script>
 
-        let btn = document.getElementById("btn");
-        btn.addEventListener("click", question);
+        // let btn = document.getElementById("btn");
+        // btn.addEventListener("click", question);
+        
+        document.getElementById("reset").onclick = function(e) {
+            document.getElementById("input").value = "";
+        }
 
-        function question () {
+        document.getElementById("btn").onclick = function (e) {
+        // function question () 
+        
             let randomNumber = Math.floor(Math.random() * 100) + 1;
             let message;
   
