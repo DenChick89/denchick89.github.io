@@ -1,0 +1,22 @@
+.ball {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: black;
+    margin-top: 200px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: inset -10px -10px 100px #000, 10px 10px 20px black, inset 0px 0px 10px black;
+}
+
+.ball-style {
+    padding-top: 170px;
+}
+
+.question {
+    
+}
+
+.button {
+    margin-top: 20px;
+}
