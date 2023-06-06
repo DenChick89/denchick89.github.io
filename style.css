@@ -1,9 +1,13 @@
+body {
+    background-color: cadetblue;
+}
+
 .ball {
     width: 400px;
     height: 400px;
     margin: 0 auto;
     background-color: black;
-    margin-top: 200px;
+    margin-top: 250px;
     border-radius: 50%;
     text-align: center;
     box-shadow: inset -10px -10px 100px #000, 10px 10px 20px black, inset 0px 0px 10px black;
