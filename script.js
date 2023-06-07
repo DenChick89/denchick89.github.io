@@ -4,7 +4,11 @@ document.getElementById("reset").onclick = function(e) {
 }
 
 // ask
+let modalWindow = document.getElementById("modal"); // modal window
+
 document.getElementById("btn").onclick = function (e) {
+
+    modalWindow.style.display = "flex"; // modal window
   
     let randomNumber = Math.floor(Math.random() * 100) + 1;
     let message;
@@ -72,5 +76,18 @@ document.getElementById("btn").onclick = function (e) {
         break;
     }
   
-    alert(message);
+    document.getElementById("messageOut").innerHTML = message;  
+    // alert(message);
 };
+
+
+
+//modal
+    document.getElementById("again-button").onclick = function(e) {
+        modalWindow.style.display = "none";
+    }
+
+
+
+
+
