@@ -4,9 +4,17 @@ document.getElementById("reset").onclick = function(e) {
 }
 
 // ask
+let buttonOff = document.getElementById("btn");
+let resetOff = document.getElementById("reset");
+let inputOff = document.getElementById("input");
+
 let modalWindow = document.getElementById("modal"); // modal window
 
 document.getElementById("btn").onclick = function (e) {
+
+    buttonOff.style.display = "none";
+    resetOff.style.display = "none";
+    inputOff.style.display = "none";
 
     modalWindow.style.display = "flex"; // modal window
   
@@ -85,6 +93,9 @@ document.getElementById("btn").onclick = function (e) {
 //modal
     document.getElementById("again-button").onclick = function(e) {
         modalWindow.style.display = "none";
+        buttonOff.style.display = "flex";
+        resetOff.style.display = "flex";
+        inputOff.style.display = "flex";
     }
 
 

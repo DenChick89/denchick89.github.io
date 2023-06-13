@@ -48,6 +48,8 @@ img {
 }
 
 #input {
+    display: flex;
+    flex-wrap: nowrap;
     background-color: darkslateblue;
     height: 50px;
     width: 400px;
@@ -59,10 +61,13 @@ img {
 }
 
 .button {
+    display: flex;
+    flex-wrap: nowrap;
     margin: 0 auto;
     margin-top: 100px;
     /* border: 1px solid red; */
     margin-bottom: 100px;
+    text-align: center;
 }
 
 #btn {
@@ -105,7 +110,7 @@ img {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 0;
 }
 
 .triangle__second {
@@ -139,9 +144,128 @@ img {
 
 .message-out {
     position: relative;
-    top: -250px;
+    top: -270px;
     left: -100px;
     width: 200px;
     color: #000;
-    font-size: 25px;
+    font-size: 30px;
 }
+
+@media(max-width:720px) {
+
+    .triangle__second {
+        width: 0;
+        height: 0;
+        border-top: 230px solid white;
+        border-right: 180px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-left: 180px solid transparent;
+        margin-top: 10px;
+    }
+    
+    #found-button {
+        margin-bottom: 110px;
+    }
+    
+    #again-button {
+        margin-top: 70px;
+    }
+    
+    #found-button, #again-button {
+        height: 50px;
+        width: 400px;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .message-out {
+        top: -200px;
+        left: -100px;
+        width: 200px;
+        font-size: 25px;
+    }
+}
+
+@media(max-width:420px) {
+
+    #btn {
+        margin-right: 20px;
+        height: 30px;
+        width: 120px;
+        font-size: 15px;
+    }
+
+    #reset {
+        margin-left: 20px;
+        height: 30px;
+        width: 120px;
+        font-size: 15px;
+    }
+
+    #input {
+        height: 30px;
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .ball-style {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    
+    .triangle{
+        width: 0;
+        height: 0;
+        border-top: 170px solid white;
+        border-right: 120px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-left: 120px solid transparent;
+        margin-top: 90px;
+        margin-left: 30px;
+    } 
+    
+    img {
+        display: flex;
+        width: 150px;
+        margin-top: -170px;
+        margin-left: -75px;
+        
+    }
+
+    /* modal window */
+
+    .triangle__second {
+        width: 0;
+        height: 0;
+        border-top: 200px solid white;
+        border-right: 150px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-left: 150px solid transparent;
+        margin-top: -130px;
+    }
+    
+    #found-button {
+        margin-bottom: 200px;
+    }
+    
+    #again-button {
+        margin-top: 150px;
+    }
+    
+    #found-button, #again-button {
+        height: 30px;
+        width: 300px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .message-out {
+        top: -180px;
+        left: -100px;
+        width: 200px;
+        font-size: 20px;
+    }
+}
+
