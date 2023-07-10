@@ -1,22 +1,31 @@
 // reset
 document.getElementById("reset").onclick = function(e) {
     document.getElementById("input").value = "";
+    document.getElementById("triangle").style.transform = "scale(1)";
+    document.getElementById("imgQuestion").style.display = "flex";
+    document.getElementById("messageOut").style.display = "none";
+
 }
 
 // ask
-let buttonOff = document.getElementById("btn");
-let resetOff = document.getElementById("reset");
-let inputOff = document.getElementById("input");
+// let buttonOff = document.getElementById("btn");
+// let resetOff = document.getElementById("reset");
+// let inputOff = document.getElementById("input");
 
-let modalWindow = document.getElementById("modal"); // modal window
+// let modalWindow = document.getElementById("modal"); // modal window
 
 document.getElementById("btn").onclick = function (e) {
 
-    buttonOff.style.display = "none";
-    resetOff.style.display = "none";
-    inputOff.style.display = "none";
+    // buttonOff.style.display = "none";
+    // resetOff.style.display = "none";
+    // inputOff.style.display = "none";
 
-    modalWindow.style.display = "flex"; // modal window
+    // modalWindow.style.display = "flex"; // modal window
+
+    document.getElementById("triangle").style.transform = "scale(2)";
+    document.getElementById("imgQuestion").style.display = "none";
+    document.getElementById("messageOut").style.display = "flex";
+
   
     let randomNumber = Math.floor(Math.random() * 100) + 1;
     let message;
@@ -91,12 +100,17 @@ document.getElementById("btn").onclick = function (e) {
 
 
 //modal
-    document.getElementById("again-button").onclick = function(e) {
-        modalWindow.style.display = "none";
-        buttonOff.style.display = "flex";
-        resetOff.style.display = "flex";
-        inputOff.style.display = "flex";
-    }
+    // document.getElementById("again-button").onclick = function(e) {
+    //     modalWindow.style.display = "none";
+    //     buttonOff.style.display = "flex";
+    //     resetOff.style.display = "flex";
+    //     inputOff.style.display = "flex";
+    // }
+
+
+// scale 
+
+
 
 
 
