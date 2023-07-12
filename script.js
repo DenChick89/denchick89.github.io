@@ -22,9 +22,19 @@ document.getElementById("btn").onclick = function (e) {
 
     // modalWindow.style.display = "flex"; // modal window
 
-    document.getElementById("triangle").style.transform = "scale(2)";
-    document.getElementById("imgQuestion").style.display = "none";
+    document.getElementById("triangle").style.transform = "scale(2) rotate(360deg)";
+      document.getElementById("imgQuestion").style.display = "none";
     document.getElementById("messageOut").style.display = "flex";
+
+    let mediaTriangle = window.matchMedia("(max-width:420px)");
+        if (mediaTriangle.matches) {
+            document.getElementById("triangle").style.transform = "scale(1.5) rotate(360deg)";
+        };
+    
+    let mediaTriangleTablet = window.matchMedia("(max-width:720px)");
+        if (mediaTriangleTablet.matches) {
+            document.getElementById("triangle").style.transform = "scale(1.4) rotate(360deg)";
+        }
 
   
     let randomNumber = Math.floor(Math.random() * 100) + 1;
